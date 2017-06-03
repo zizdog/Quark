@@ -94,9 +94,7 @@ h3{font-size:1.125rem}
 #nav ul{top:52px}
 #nav ul a{display:block;padding:2px 15px}
 }
-@media screen and (min-width:2500px){html{font-size:150%}
-}
-
+@media screen and (min-width:2500px){html{font-size:150%}}
 </style>
 <?php $this->header(); ?>
 </head>

@@ -1,10 +1,10 @@
 <?php
 function threadedComments($comments, $options) {
-    $cbClass = $comments->authorId == $comments->ownerId ? 'admin' : 'guest';
-    $clClass = $comments->levels > 0 ? 'c_c' : 'c_p';
+    $cby = $comments->authorId == $comments->ownerId ? 'admin' : 'guest';
+    $clevel = $comments->levels > 0 ? 'c_c' : 'c_p';
     $author = $comments->url ? '<a href="' . $comments->url . '"'.'" target="_blank"' . ' rel="external nofollow">' . $comments->author . '</a>' : $comments->author;
 ?>
-<li id="li-<?php $comments->theId(); ?>" class="<?php echo $clClass;?>">
+<li id="li-<?php $comments->theId(); ?>" class="<?php echo $clevel;?>">
 <div id="<?php $comments->theId(); ?>">
 <?php
     $d = 'http://ihua.win/d.jpg';
@@ -24,7 +24,7 @@ function threadedComments($comments, $options) {
     <img class="avatar" src="<?php echo $a ?>" alt="<?php echo $comments->author; ?>" />
     <div class="cp">
     <?php $comments->content(); ?>
-        <div class="cm"><span class="ca"><?php echo $author ?></span>&nbsp;<span class="ca"> <?php echo $cbClass;?></span>&nbsp;<?php $comments->date(); ?><span class="cr"><?php $comments->reply(); ?></span></div>
+        <div class="cm"><span class="ca"><?php echo $author ?></span>&nbsp;<span class="ca"> <?php echo $cby;?></span>&nbsp;<?php $comments->date(); ?><span class="cr"><?php $comments->reply(); ?></span></div>
     </div>
 </div>
 <?php if ($comments->children){ ?><div class="children"><?php $comments->threadedComments($options); ?></div><?php } ?>
@@ -53,9 +53,7 @@ function threadedComments($comments, $options) {
 textarea.ci{padding-top:8px;height:10rem;resize:none}
 .submit{font-size:1rem;border:1px solid #f0f0f0;padding:0 30px;line-height:36px;text-align:center;height:36px;margin:0 auto;display:block;background:#f5f5f5}
 .submit:hover{color:#000;border-color:#ddd;background:#ddd;cursor:pointer}
-@media only screen and (max-width:767px){.c_p .children{margin-left:0;padding-left:0}
-}
-
+@media only screen and (max-width:767px){.c_p .children{margin-left:0;padding-left:0}}
 </style>
 <div id="comments" class="cf">
 <?php $this->comments()->to($comments); ?>
