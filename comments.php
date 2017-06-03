@@ -76,8 +76,8 @@ textarea.ci{padding-top:8px;height:10rem;resize:none}
         <?php endif ; ?>
         <div class="tbox">
         <input type="text" name="author" id="author" class="ci" placeholder="称呼" value="<?php $this->remember('author'); ?>" required>
-        <input type="email" name="mail" id="mail" class="ci" placeholder="邮箱" value="<?php $this->remember('mail'); ?>" <?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?>>
-        <input type="url" name="url" id="url" class="ci" placeholder="http://" value="<?php $this->remember('url'); ?>" <?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?>>
+        <input type="email" name="mail" id="mail" class="ci" placeholder="邮箱" value="<?php $this->remember('mail'); ?>" required>
+        <input type="url" name="url" id="url" class="ci" placeholder="http://" value="<?php $this->remember('url'); ?>">
         </div>
         </div>
     <?php endif; ?>
