@@ -9,7 +9,7 @@ blockquote{padding:0 15px;color:#666;border-left:4px solid #ddd}
 pre{background:#f7f7f7;margin:1.25rem 0;padding:.9375rem;overflow:auto;color:#4d4d4c;line-height:1.75}
 pre code{background:0 0;text-shadow:none;padding:0;margin:0}
 code{background:#eee;text-shadow:0 1px #fff;padding:0 .25rem;margin:0 .25rem;color:#555}
-hr{margin:40px 0;height:3px;border:none;background-color:#ddd;background-image:repeating-linear-gradient(-45deg,#fff,#fff 4px,transparent 4px,transparent 8px)}
+hr{margin:40px 0;height:3px;border:none;background-color:#ddd}
 ol,ul{list-style:none}
 a{color:#555;text-decoration:none}
 a.active,a:hover{color:#000;outline:0;transition:.2s ease-in-out}
