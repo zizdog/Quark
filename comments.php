@@ -2,7 +2,7 @@
 function threadedComments($comments, $options) {
     $cby = $comments->authorId == $comments->ownerId ? 'admin' : 'guest';
     $clevel = $comments->levels > 0 ? 'c_c' : 'c_p';
-    $author = $comments->url ? '<a href="' . $comments->url . '"'.'" target="_blank"' . ' rel="external nofollow">' . $comments->author . '</a>' : $comments->author;
+    $author = $comments->url ? '<a href="' . $comments->url . '"'.'" target="_blank"' . ' rel="external">' . $comments->author . '</a>' : $comments->author;
 ?>
 <li id="li-<?php $comments->theId(); ?>" class="<?php echo $clevel;?>">
 <div id="<?php $comments->theId(); ?>">
