@@ -81,7 +81,7 @@ h3{font-size:1.125rem}
 .o .m{background:0}
 .o #nav ul{display:block;background:#fff}
 .o #nav ul li a{text-align:center;padding:6px 0;border-top:1px solid #f2f2f2}
-.p{margin:2.2rem 0}
+.p{margin:2.5rem 0}
 .page-navigator{margin-bottom:2.2rem}
 .pt{text-align:center}
 .s .pt{margin:0}
