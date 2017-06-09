@@ -1,6 +1,6 @@
 <?php
 function threadedComments($comments, $options) {
-    $cby = $comments->authorId == $comments->ownerId ? 'admin' : 'guest';
+    $cby = $comments->authorId == $comments->ownerId ? '<span class="cby">admin</span>' : '';
     $clevel = $comments->levels > 0 ? 'c_c' : 'c_p';
     $author = $comments->url ? '<a href="' . $comments->url . '"'.'" target="_blank"' . ' rel="external">' . $comments->author . '</a>' : $comments->author;
 ?>
@@ -24,7 +24,7 @@ function threadedComments($comments, $options) {
     <img class="avatar" src="<?php echo $a ?>" alt="<?php echo $comments->author; ?>" />
     <div class="cp">
     <?php $comments->content(); ?>
-        <div class="cm"><span class="ca"><?php echo $author ?></span>&nbsp;<span class="ca"> <?php echo $cby;?></span>&nbsp;<?php $comments->date(); ?><span class="cr"><?php $comments->reply(); ?></span></div>
+        <div class="cm"><span class="ca"><?php echo $author ?></span>&nbsp;<?php echo $cby;?>&nbsp;<?php $comments->date(); ?><span class="cr"><?php $comments->reply(); ?></span></div>
     </div>
 </div>
 <?php if ($comments->children){ ?><div class="children"><?php $comments->threadedComments($options); ?></div><?php } ?>
@@ -44,8 +44,8 @@ function threadedComments($comments, $options) {
 .cp:hover .cr{display:block}
 .ccr,.cm{font-size:.766rem;margin-top:1rem;color:#aaa}
 .ccr{text-align:right}
-.ca{padding:.1rem .25rem;border-radius:2px;background:#eee;font-size:.7rem}
-.ca a:hover{color:#f08f00!important;background:rgba(255,152,0,.1)}
+.ca,.cby{padding:.1rem .25rem;border-radius:2px;background:#eee;font-size:.7rem}
+.ca a:hover{color:#f08f00!important}
 .c_p>.children{margin-left:1rem;padding-left:40px}
 .tbox{padding:0 0 0 18px}
 .ci{font-size:14px;line-height:1.5;color:#555;height:30px;margin:10px 0;border:1px solid #ccc;border-radius:2px;width:100%;padding:3px 7px;margin-left:-18px;overflow:auto}
