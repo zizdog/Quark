@@ -14,9 +14,9 @@ ol,ul{list-style:none}
 a{color:#555;text-decoration:none}
 a.active,a:hover{color:#000;outline:0;transition:.2s ease-in-out}
 p{margin:0 0 25px 0}
-h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:400;line-height:1.1rem}
+h1,h2,h3,h4,h5,h6{font-weight:400;}
 h2,h3,h4,h5,h6{margin:20px 0 10px}
-h1{font-size:1.625rem}
+h1{font-size:1.625rem;line-height: 1.25}
 h2{font-size:1.375rem}
 h3{font-size:1.1875rem}
 h4{font-size:1rem;border-left:3px solid #777;padding-left:8px}
