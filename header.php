@@ -14,13 +14,13 @@ ol,ul{list-style:none}
 a{color:#555;text-decoration:none}
 a.active,a:hover{color:#000;outline:0;transition:.2s ease-in-out}
 p{margin:0 0 25px 0}
-h1,h2,h3,h4,h5,h6{font-weight:400;margin:20px 0 10px}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:1.25rem 0 .625rem}
 h1{font-size:1.625rem;line-height: 1.25;margin:0}
 h2{font-size:1.375rem}
 h3{font-size:1.1875rem}
 h4{font-size:1rem;border-left:3px solid #777;padding-left:8px}
 #h{height:124px;width:100%;background:#f5f5f5;border-bottom:1px solid #e1e2e3;font-size:.8125rem;margin:0 auto}
-#comments,.p{padding:0 20px}
+#comments,.p{padding:0 1.25rem}
 .w1{width:768px}
 #nav{margin:auto;position:relative;height:100%}
 #nav::after{clear:both;content:"";display:block}
@@ -29,11 +29,11 @@ h4{font-size:1rem;border-left:3px solid #777;padding-left:8px}
 .logo a:hover{text-decoration:none}
 #nav ul{position:absolute;right:10px;top:51px}
 #nav ul li{display:inline-block;float:left}
-#nav ul a{display:block;padding:2px 10px}
+#nav ul a{display:block;padding:2px .625rem}
 #nav ul a:hover{background:#ddd;text-decoration:none}
-#m{margin:auto;padding-top:10px}
+#m{margin:auto;padding-top:.625rem}
 .p{margin:4.2rem 0}
-.p ol,.p ul{list-style-type:circle;padding-left:1.5rem;margin-bottom:20px}
+.p ol,.p ul{list-style-type:circle;padding-left:1.5rem;margin-bottom:1.25rem}
 .p ol{list-style-type:decimal;padding-left:2rem}
 .p u{color:#b00}
 .s .pt{text-align:center;margin:3.75rem 0 3.25rem 0}
@@ -41,7 +41,7 @@ h4{font-size:1rem;border-left:3px solid #777;padding-left:8px}
 .pm{margin-top:1.75rem}
 .pp{margin:1.5rem 0;text-align:justify;text-justify:inter-ideograph}
 .pp img{display:block;margin:.875rem 0;max-width:100%;height:auto}
-.pp h2,.pp h3,.pp h4{padding:10px 0 15px}
+.pp h2,.pp h3,.pp h4{padding:.625rem 0 .9375rem}
 .s .pp a:before{content:' Link';vertical-align:super;color:#b00;font-size:.5625rem}
 .s .pp a{border-bottom:1px dashed #c00}
 .s .pp a:hover{border-bottom:1px solid #aaa}
