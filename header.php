@@ -9,6 +9,7 @@ blockquote{padding:0 15px;color:#666;border-left:4px solid #ddd}
 pre{background:#f7f7f7;margin:1.25rem 0;padding:.9375rem;overflow:auto;color:#4d4d4c;line-height:1.75}
 pre code{background:0 0;text-shadow:none;padding:0;margin:0}
 code{background:#eee;text-shadow:0 1px #fff;padding:0 .25rem;margin:0 .25rem;color:#555}
+embed{display: none;}
 hr{margin:40px 0;height:1px;background-color:#ddd}
 ol,ul{list-style:none}
 a{color:#555;text-decoration:none}
