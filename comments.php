@@ -7,7 +7,6 @@ function threadedComments($comments, $options) {
 <li id="li-<?php $comments->theId(); ?>" class="<?php echo $clevel;?>">
 <div id="<?php $comments->theId(); ?>">
 <?php
-    $d = 'http://ihua.win/d.jpg';
     $t = 1209600*8;
     $a = Helper::options()->siteUrl . 'usr/uploads/avatar/' . md5(strtolower($comments->mail)) . '.jpg';
     $e = __TYPECHO_ROOT_DIR__ . '/' . 'usr/uploads/avatar/' . md5(strtolower($comments->mail)) . '.jpg';
@@ -15,7 +14,6 @@ function threadedComments($comments, $options) {
     $a = 'https://secure.gravatar.com/avatar/' . md5(strtolower($comments->mail)) . '?s=80&r=X&d=';
     copy($a, $e);
         if (!is_file($e)){
-            $a = $d; 
             copy($d, $e);
         };
     };
