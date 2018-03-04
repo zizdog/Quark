@@ -4,7 +4,7 @@
 Name：Quark；Description：“简爱”；Feature：自适应，极速，精致！Size：5.9k（未压缩）
 
 
-预览地址：https://ihua.win/Quark.html
+预览地址：http://ihua.win/Quark.html
 
 --------
 
