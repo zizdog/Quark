@@ -3,9 +3,9 @@
  * 简 ● 爱
  * 
  * @package Quark
- * @author 孙华
- * @version 2.0
- * @link http://sunhua.me
+ * @author zizdog
+ * @version 2.1
+ * @link http://blog.zizdog.com
  */
  $this->need('header.php');?>
 <?php while($this->next()): ?>
